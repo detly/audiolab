@@ -14,7 +14,7 @@ def configuration(parent_package='',top_path=None):
         os.remove('pysndfile.py')
 
     # Check that sndfile can be found and get necessary informations
-    sf_info = info_factory('sndfile', ['sndfile'], ['sndfile.h'],
+    sf_info = info_factory('sndfile', ['sndfile-1'], ['sndfile.h'],
                            classname='SndfileInfo')()
     try:
         sf_config = sf_info.get_info(2)
